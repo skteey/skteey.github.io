@@ -1,36 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="pragma" content="no-cache" />
-	<meta http-equiv="expires" content="-1" />
-	<title>Virtual Net » Hotspot</title>
-	<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" title="default" charset="utf-8" />
-	<link rel="stylesheet" href="css/text.css" type="text/css" media="screen" title="default" charset="utf-8" />
-	<link rel="stylesheet" href="css/custom.css" type="text/css" media="screen" title="default" charset="utf-8" />
-	<link rel="stylesheet" href="css/xGrid.css" type="text/css" media="screen" title="default" charset="utf-8" />	
-	<link rel="stylesheet" href="css/uniform.default.css" type="text/css" media="screen" title="default" charset="utf-8" />	
-	<link rel="stylesheet" href="css/jquery.lightbox-0.5.css" type="text/css" media="screen" title="default" charset="utf-8" />
-	<link rel="stylesheet" href="css/jquery.visualize.css" type="text/css" media="screen" title="default" charset="utf-8" />
-	<link rel="stylesheet" href="themes/black/css/black.css" type="text/css" media="screen"  charset="utf-8" class="styleswitch" id="styleswitch" />
-		
-	<!--[if IE 8]>	
-	<link rel="stylesheet" href="./css/ie8.css" type="text/css" media="screen" title="default" charset="utf-8" />
-	<![endif]-->
-	
-	<!--[if IE 7]>	
-	<link rel="stylesheet" href="./css/ie7.css" type="text/css" media="screen" title="default" charset="utf-8" />
-	<![endif]-->	
-	
-	<link rel="stylesheet" href="css/preview.css" type="text/css" media="screen" title="default" charset="utf-8" />
-    <link rel="stylesheet" href="css/hotspot.css" type="text/css" />
+<title>:: Cyber Games &amp; Internet WIFI ltda.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<style type="text/css">
+body {color: #737373; font-size: 10px; font-family: verdana;}
+
+textarea,input,select {
+background-color: #FDFBFB;
+border: 1px solid #BBBBBB;
+padding: 2px;
+margin: 1px;
+font-size: 14px;
+color: #808080;
+}
+
+a, a:link, a:visited, a:active { color: #AAAAAA; text-decoration: none; font-size: 10px; }
+a:hover { border-bottom: 1px dotted #c1c1c1; color: #AAAAAA; }
+img {border: none;}
+td { font-size: 14px; color: #7A7A7A; }
+</style>
+
+<meta name="keywords" content="cyber games, cyber provedor, internet provedor">
+<meta name="description" content="O Seu provedor de Acesso a Internet Banda Larga Wireless.">
 
 </head>
 
-<body class="layout-fixed">
-	$(if chap-id)
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" bgcolor="#E6F5F9">
+$(if chap-id)
 	<form name="sendin" action="$(link-login-only)" method="post">
 		<input type="hidden" name="username" />
 		<input type="hidden" name="password" />
@@ -49,206 +49,200 @@
 	    }
 	//-->
 	</script>
-	$(endif)
-	
-<div id="topMenu" class="clearfix">
-	
-	
-  <div class="pad"> 
-    <div class="left"> Suporte e Assinatura: (66) 9609-8499 </div>
-    <div class="right"> <a href="javascript:void(window.open('http://www.casgrupolm.com.br/microtik/mk/livezilla.php','','width=600,height=600,left=0,top=0,resizable=yes,menubar=no,location=yes,status=yes,scrollbars=yes'))">Clique 
-      Aqui - Atendimento On-line</a></div>
-  </div>
-  <!-- .pad -->
-		
-</div>	
-	
-<div id="page"> 
-  <!-- Start #header -->
-  <div id="header"> 
-    <div class="pad"> 
-      <h1 id="title"><a href="#"></a></h1>
-      <!-- #search -->
-    </div>
-  </div>
-  <!-- #header -->
-  <!-- Start #nav -->
-  <!-- #megadropdown -->
-  <!-- Start #body -->
-  <div id="body" class="clearfix"> 
-    <!-- Start #main -->
-    <div id="main"> 
-      <div class="portlet portlet-closable x12"> 
-        <div class="portlet-header"> 
-          <h4>Área de Autenticação</h4>
-        </div>
-        <!-- .portlet-header -->
-        <div class="portlet-content"> 
-          <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
-            <input type="hidden" name="dst" value="$(link-orig)" />
-            <input type="hidden" name="popup" value="false" />
-            <p style="margin-bottom: 0">Login:</p>
-            <input name="username" type="text" class="CaixaDeTexto" id="login" value="$(username)"/>
-            <p style="margin-bottom: 0; margin-top:20px">Senha:</p>
-            <input name="password" type="password" class="CaixaDeTexto" id="senha" />
-            <p style="margin-top: 20px; margin-bottom: 0"> 
-              <input name="button" type="submit" class="Botao" id="button" value="Acessar" />
-            </p>
-          </form>
-          $(if error) 
-          <div class="message message-error message-closable"> $(error) </div>
-          $(endif) </div>
-        <!-- .portlet-content -->
-      </div>
-      <!-- .portlet -->
-      <div class="portlet portlet-closable x5" style="width: 385px"> 
-        <div class="portlet-header"> 
-          <h4>Info.:</h4>
-          <ul class="portlet-tab-nav">
-            <li class="portlet-tab-nav-active"><a href="#tab1">Planos</a></li>
-            <li class=""><a href="#tab2">Internet via rádio?</a></li>
-            <li><a href="#tab3">Equipamentos</a></li>
-          </ul>
-        </div>
-        <!-- .portlet-header -->
-        <div class="portlet-content" style="width: 321px"> 
-          <div id="tab1" class="portlet-tab-content portlet-tab-content-active"> 
-            <h2>Planos</h2>
-            <p class="MsoNormal" style="margin-bottom: 1em"> <img border="0" src="images/marcador.png" width="15" height="15"><b> 
-              Plano 128k</b></p>
-            <p class="MsoNormal" align="justify" style="margin-bottom: 1em"> Para 
-              quem gosta de ver seus e-mails acessar as comunidades de relacionamento, 
-              mensagens instantânea, troca de arquivos, baixar músicas e muito 
-              mais...</p>
-            <p class="MsoNormal" style="margin-bottom: 1em"> <img border="0" src="images/marcador.png" width="15" height="15"><b> 
-              Plano 256k</b></p>
-            <p class="MsoNormal" align="justify" style="margin-bottom: 1em"> Para 
-              quem quer acessar e-mail, participar de bate-papos, conversar on-line 
-              com os amigos, fazer pesquisas na internet, enviar e baixar fotos, 
-              ouvir baixar músicas e filmes, ver vídeos, jogar on-line.</p>
-            <p class="MsoNormal" style="margin-bottom: 1em"> <img border="0" src="images/marcador.png" width="15" height="15"><b> 
-              Plano 512k</b></p>
-            <p class="MsoNormal" align="justify" style="margin-bottom: 1em"> Para 
-              quem quer acessar e-mail, fazer pesquisas na internet, enviar e 
-              baixar fotos, ouvir baixar músicas e filmes com muita rapidez, ver 
-              vídeos, jogas online, bate-papo com imagens de alta definição, assistir 
-              á programas de TV*.</p>
-            <div style="float: right"> <a href="formulario.html"> <img border="0" src="images/assine.png" width="202" height="70" style="float: right"></a></div>
-          </div>
-          <!-- .portlet-tab-content -->
-          <div id="tab2" class="portlet-tab-content"> 
-            <h2>O que é a internet via rádio?</h2>
-            <p align="justify">O acesso á Internet banda larga via Rádio, é moderno, 
-              seguro, veloz e prático. A conexão é 24 horas por dia, em alta velocidade, 
-              sem usar linha telefônica, garantindo á você, economia e satisfação.<br>
-              <br>
-              Através de equipamentos especiais (Rádio e antena), instalados em 
-              seu condomínio, casa ou empresa, você fica conectado a Internet, 
-              recebendo e transmitindo dados por meio de ondas de Rádio.<br>
-              &nbsp;</p>
-            <h2 align="justify">Porque à internet via rádio?</h2>
-            <p align="justify"> <img border="0" src="images/marcador.png" width="15" height="15"> 
-              Acesso ilimitado (24 h por dia);<br>
-              <img border="0" src="images/marcador.png" width="15" height="15"> 
-              Sem limite de tráfego (sem franquia de uso);<br>
-              <img border="0" src="images/marcador.png" width="15" height="15"> 
-              não utiliza linha telefônica e operadora de telefonia ou TV por 
-              assinatura;<br>
-              <img border="0" src="images/marcador.png" width="15" height="15"> 
-              Conexão imediata, sem gastos com pulsos ou discagem;<br>
-              <img border="0" src="images/marcador.png" width="15" height="15"> 
-              Dispensa o uso de modem;<br>
-              <img border="0" src="images/marcador.png" width="15" height="15"> 
-              Mais flexibilidade para escolher seu plano;<br>
-              <img border="0" src="images/marcador.png" width="15" height="15"> 
-              Economia para quem precisa de Internet rápida;<br>
-              <img border="0" src="images/marcador.png" width="15" height="15"> 
-              Taxa mensal fixa, já com o serviço do Provedor;<br>
-              <img border="0" src="images/marcador.png" width="15" height="15"> 
-              Velocidade com qualidade;<br>
-              <img border="0" src="images/marcador.png" width="15" height="15"> 
-              Segurança sem quedas de conexão;<br>
-              <img border="0" src="images/marcador.png" width="15" height="15"> 
-              Suporte técnico especializado com atendimento em domicílio. 
-            <p align="justify"> 
-            <h2 align="left">Requisitos Técnicos Necessários</h2>
-            <p align="left"> <img border="0" src="images/marcador.png" width="15" height="15"> 
-              Processador de 233 Mhz<br>
-              <img border="0" src="images/marcador.png" width="15" height="15"> 
-              Memória RAM de 64 MB<br>
-              <img border="0" src="images/marcador.png" width="15" height="15"> 
-              Placa de rede Ethernet 10/100 Mbps – RJ 45</div>
-          <!-- .portlet-tab-content -->
-          <div id="tab3" class="portlet-tab-content"> 
-            <h2>Equipamentos</h2>
-            <table border="0" width="110%" style="border-collapse: collapse">
-              <tr> 
-                <td width="164"> <img src="images/produtos.jpg" /></td>
-                <td rowspan="2" valign="top"> <img border="0" src="images/marcador.png" width="15" height="15"> 
-                  01 Antena Direcional<br> <img border="0" src="images/marcador.png" width="15" height="15"> 
-                  01 Rádio Ap Client<br> <img border="0" src="images/marcador.png" width="15" height="15"> 
-                  01 CAbo PigTail<br> <img border="0" src="images/marcador.png" width="15" height="15"> 
-                  01 Placa de Rede<br> <img border="0" src="images/marcador.png" width="15" height="15"> 
-                  Conectores 
-                  <p> <img border="0" src="images/marcador.png" width="15" height="15"> 
-                    Instalação Grátis</p>
-                  <p align="justify"><b>Obs.: O equipamento é fornecido sobre 
-                    comodato.</b></td>
-              </tr>
-              <tr> 
-                <td width="164">&nbsp;</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-      <!-- .portlet -->
-      <!-- .portlet -->
-      <!-- .portlet -->
-      <!-- .portlet -->
-      <!-- .portlet -->
-      <div class="xbreak"></div>
-      <!-- .portlet -->
-      <!-- .portlet -->
-    </div>
-    <!-- #sidebar -->
-  </div>
-  <!-- #body -->
-  <!-- Start #footer -->
-  <div id="footer"> 
-    <p>Virtual Net &copy; Todos os direitos reservados</p>
-  </div>
+$(endif)
+
+<div align="center">
+<a href="$(link-login-only)?target=lv&amp;dst=$(link-orig-esc)">
+<font color="#FFFFFF">Latviski</font></a>
 </div>
-<!-- #page -->
 
-<script  type="text/javascript" src="js/jquery/jquery.1.4.2.min.js"></script>
-<script  type="text/javascript" src="js/jquery/jquery.hoverIntent.min.js"></script>
+<table width="100%" style="margin-top: 10%;">
+	<tr>
+	<td align="center" valign="middle">
+		<div class="notice" style="color: #c1c1c1; font-size: 9px">$(if trial == 'yes')Free trial available, <a style="color: #FF8080"href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click here</a>.$(endif)</div><br />
+		<table width="593" height="398" style="padding: 0px" cellpadding="0" cellspacing="0">
+			<!-- MSTableType="layout" -->
+			<tr>
+	<td></td>
+	<td></td>
+				<td></td>
+				<td></td>
+				<td height="15"></td>
+				</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px dotted #808080" bgcolor="#FFFFFF" valign="bottom">
+					<form name="login" action="$(link-login-only)" method="post"
+					    $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+						
+							<div align="right">
+						
+							<table cellpadding="0" cellspacing="0" width="349" height="79">
+								<!-- MSTableType="layout" -->
+								<tr>
+									<td valign="top" height="79" width="349">
+									<p align="center">
+									<img border="0" src="img/login_cg.jpg" width="348" height="73"></td>
+								</tr>
+							</table>
+						
+							<table width="337" height="167">
+								<!-- MSTableType="layout" -->
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td height="15"></td>
+									</tr>
+								<tr>
+	<td valign="top" style="border-left-width: 1px; border-right: 1px dotted #808080; border-top-width: 1px; border-bottom-width: 1px" rowspan="9">
+	<table cellpadding="0" cellspacing="0" width="136" height="134">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td>&nbsp;</td>
+			<td valign="top" align="left"><b><span style="font-size: 8pt">E F E 
+			T U A R<br>
+			L O G&nbsp; I N</span></b></td>
+			<td height="26">&nbsp;</td>
+			</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td height="12"></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td valign="top">
+			<p align="justify"><font color="#000000">
+			<span style="font-size: 8pt">Para navegar coloque ao lado seu <b>
+			usuário</b> e </span> <b><span style="font-size: 8pt">senha.<br>
+			</span></b></font><span style="font-size: 8pt"><font color="#000000">
+			Nunca Forneça esses dados a estranho.</font></span></td>
+			<td height="91">&nbsp;</td>
+			</tr>
+		<tr>
+			<td width="10"></td>
+			<td width="102"></td>
+			<td height="5" width="24"></td>
+		</tr>
+	</table>
+	</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td height="16"></td>
+									</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td height="10"></td>
+										<td valign="middle" align="center" rowspan="3" colspan="2">
+										<input style="width: 76; height:28; vertical-align:baseline; font-family:Tahoma; font-size:13; color:#000000" name="username" type="text" value="$(username)" size="17"/></td>
+									</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td valign="top" colspan="2" align="right" height="23">
+									<p align="right">
+									<font color="#000000" style="font-size: 9pt">
+									Usuario</font></td>
+									</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td height="7"></td>
+									</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td height="3"></td>
+									</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+										<td valign="middle" align="center" rowspan="3">
+										<input style="width: 80; height:24; font-family:Tahoma; vertical-align:baseline; font-size:12; color:#000000" name="password" type="password" size="17"/></td>
+									<td height="4"></td>
+									</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td valign="top" align="right">
+									<font color="#000000" style="font-size: 9pt">
+									Senha</font></td>
+									<td height="22"></td>
+									</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td height="6"></td>
+									</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+										<td align="right" rowspan="2" width="84">
+										<font color="#008000">
+										<input type="submit" value="Entrar" style="color: #FFFFFF; background-color: #808080" /></font></td>
+									<td height="29"></td>
+								</tr>
+								<tr>
+									<td width="137"></td>
+									<td width="34"></td>
+									<td width="5"></td>
+									<td width="50"></td>
+									<td height="8" width="1"></td>
+								</tr>
+							</table>
+						</div>
+					</form>
+				</td>
+				<td>&nbsp;</td>
+				<td height="266">&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td valign="top" bgcolor="#FFFFFF">
+				<p align="center">
+				<font face="Tahoma" style="font-size: 8pt">
+				Assistência Técnica (99) 8127-4844 <br>
+				Horário - 7:00 a 18:00 Segunda a Sábado.</font></td>
+				<td>&nbsp;</td>
+				<td height="26">&nbsp;</td>
+				</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td width="26">&nbsp;</td>
+				<td width="349">&nbsp;</td>
+				<td width="28">&nbsp;</td>
+				<td height="43">&nbsp;</td>
+				</tr>
+			<tr>
+				<td width="121">&nbsp;</td>
+				<td valign="top" align="center" colspan="3">$(if error)<br /><div style="color: #FF8080; font-size: 12px">$(error)</div>$(endif)
+				</td>
+				<td width="69" height="48">&nbsp;</td>
+				</tr>
+		</table>
+	
+	</td>
+	</tr>
+</table>
 
-<script  type="text/javascript" src="js/murano/murano.js"></script>
-<script  type="text/javascript" src="js/murano/murano.nav.js"></script>
-<script  type="text/javascript" src="js/murano/murano.portlet.js"></script>
-<script  type="text/javascript" src="js/murano/murano.message.js"></script>
-<script  type="text/javascript" src="js/jquery/jquery.uniform.min.js"></script>
-<script  type="text/javascript" src="js/jquery/jquery.tablesorter.min.js"></script>
-<script  type="text/javascript" src="js/jquery/jquery.lightbox-0.5.min.js"></script>
-<!--[if IE]><script  type="text/javascript" src="js/misc/excanvas.min.js"></script>
-	<![endif]-->
-<script type="text/javascript" charset="utf-8">
-$(function () 
-{
-	megadrop.init ();
-	murano.portlet.init ();
-	murano.init ();
-	murano.message.init ();	
-	preview.init ();
-});
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
 </script>
-
-
-
-</div>
-
-
 </body>
-
 </html>
