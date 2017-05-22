@@ -1,0 +1,294 @@
+﻿<HTML>
+<HEAD>
+<title> : : แบบทดสอบ : : </title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-874">
+<style type="text/css"> 
+   a {color: #0000FF; text-decoration: none}
+   a:hover	 {color: #FF0000; text-decoration: underline} 
+   body {padding-right : 0px; padding-left : 20px; padding-bottom : 0px; margin : 0px; padding-top : 0px }
+   .style1 {	color: #0000FF; font-weight: bold; }
+</style>
+ 
+<SCRIPT LANGUAGE="JavaScript"> 
+var speechstr='"';
+var A1= new String		// เท่าจำนวนข้อสอบ
+var A2= new String
+var A3= new String
+var A4= new String
+var A5= new String
+var A6= new String
+var A7= new String
+var A8= new String
+var A9= new String
+var A10= new String
+var A11= new String
+var A12= new String
+var A13= new String
+var A14= new String
+var A15= new String
+var A16= new String
+var A17= new String
+var A18= new String
+var A19= new String
+var A20= new String
+var CkAns=0
+ 
+function MarkAnswers()	{
+   var i=0
+   t=20		// จำนวนข้อสอบ
+   info="toolbarno,location=no,directories=no,directories=no,status=no,menubar=no,height=400,width=400,"
+   info+="scrollbars=yes,resizable=yes"
+   Answers=window.open("","msgWindow",info)
+   Answers.opener=window;
+   Answers.name="opener";
+   Answers.document.clear;
+   Answers.document.write("<HEAD><TITLE>ตรวจคำตอบ...</TITLE></HEAD>");
+   CkAns=CkAns+1;
+   if (A1.toLowerCase()=="1")	// ตัวเลขคือข้อถูก
+		{ i=i+1; }
+   if (A2.toLowerCase()=="3")
+		{ i=i+1; }
+   if (A3.toLowerCase()=="1")
+		{ i=i+1; }
+   if (A4.toLowerCase()=="4")
+		{ i=i+1; }
+   if (A5.toLowerCase()=="3")
+		{ i=i+1; }
+   if (A6.toLowerCase()=="4")
+		{ i=i+1; }
+   if (A7.toLowerCase()=="4")
+		{ i=i+1; }
+   if (A8.toLowerCase()=="1")
+		{ i=i+1; }
+   if (A9.toLowerCase()=="4")
+		{ i=i+1; }
+   if (A10.toLowerCase()=="4")
+		{ i=i+1; }
+   if (A11.toLowerCase()=="4")
+		{ i=i+1; }
+   if (A12.toLowerCase()=="3")
+		{ i=i+1; }
+   if (A13.toLowerCase()=="1")
+		{ i=i+1; }
+   if (A14.toLowerCase()=="4")
+		{ i=i+1; }
+   if (A15.toLowerCase()=="3")
+		{ i=i+1; }
+   if (A16.toLowerCase()=="3")
+		{ i=i+1; }
+   if (A17.toLowerCase()=="4")
+		{ i=i+1; }
+   if (A18.toLowerCase()=="4")
+		{ i=i+1; }
+   if (A19.toLowerCase()=="2")
+		{ i=i+1; }
+   if (A20.toLowerCase()=="1")
+		{ i=i+1; }
+   Answers.document.write("<BODY BGCOLOR=#B6F88B ALINK=#0080C0 LINK=#0080C0 VLINK=#0080C0>");
+   Answers.document.write("<p align=Left><B><FONT SIZE=3 FACE="+speechstr+"MS Sans Serif"+speechstr+" COLOR=#0033CC>ตรวจคำตอบ...ครั้งที่ "+CkAns.toString()+"</B></FONT></p>");
+   Answers.document.write("<p align=Left><B><FONT SIZE=3 FACE="+speechstr+"MS Sans Serif"+speechstr+" COLOR=#0033CC>ได้คะแนน "+i.toString()+" / "+t.toString()+"</B></FONT></p>");
+   var currentGrade=new String
+   var currentComment=new String
+   currentGrade=""
+   currentComment=""
+   if (i>=0)	    {
+      currentGrade="F";
+      currentComment=" แย่จังทำไม่ได้เลย !";
+   }
+   if (i>=8)	    {
+      currentGrade="D";
+      currentComment=" ทำได้น้อยมาก ควรปรับปรุง";
+   }
+   if (i>=12)	    {
+      currentGrade="C";
+      currentComment=" ทำได้ไม่เลวเลย อยู่ในระดับพอใช้";
+   }
+   if (i>=18)	    {
+      currentGrade="B";
+      currentComment=" อยู่ในระดับดีมาก !";
+   }
+   if (i>=20)	   {
+      currentGrade="A";
+      currentComment=" เก่งมาก  ยอดเยี่ยมที่สุด !";
+   }
+   Answers.document.write("<p align=Left><B><FONT SIZE=2 FACE="+speechstr+"MS Sans Serif"+speechstr+" COLOR=#0033CC>ได้ระดับคะแนน "+currentGrade+currentComment+"</B></FONT></p>");
+   Answers.document.write('<p align=center><form name="form2"><input type="button" value="ปิดกรอบตรวจคำตอบ" name="Close1" ONCLICK="window.close()"></form></p>');
+}
+</SCRIPT>
+</HEAD>
+<BODY bgColor=#7dffff aLink=#0080c0 vLink=#0080c0 link=#0080c0><BR>
+<center>
+  <span class="style1"><FONT SIZE="3" FACE="MS Sans Serif" COLOR=#0033CC>แบบทดสอบ&nbsp;ฮาร์แวร์และยูทิลิตี้เบื้องต้น<br>จำนวน&nbsp;20&nbsp;ข้อ<br><br>คำชี้แจง&nbsp;:&nbsp;จงคลิกคำตอบที่ถูกต้องที่สุดเพียงคำตอบเดียว</span></FONT>
+</center>
+<form name="form1" ONSUBMIT="MarkAnswers()">
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;1.<br>
+   <FONT COLOR="#000000">&nbsp;ฮาร์ดแวร์ใดไม่จัดเป็นองค์ประกอบหลักของระบบคอมพิวเตอร์</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R1" ONCLICK="A1='1'">&nbsp;ก.&nbsp;โมเด็ม<br>
+   &nbsp;&nbsp;<input type="radio" name="R1" ONCLICK="A1='2'">&nbsp;ข.&nbsp;จอภาพ<br>
+   &nbsp;&nbsp;<input type="radio" name="R1" ONCLICK="A1='3'">&nbsp;ค.&nbsp;แป้นพิมพ์<br>
+   &nbsp;&nbsp;<input type="radio" name="R1" ONCLICK="A1='4'">&nbsp;ง.&nbsp;ชิปไมโครโปรเซสเซอร์</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;2.<br>
+   <FONT COLOR="#000000">&nbsp;อุปกรณ์ใดจัดเป็นคนละประเภทกับเมาส์</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R2" ONCLICK="A2='1'">&nbsp;ก.&nbsp;ลำโพง<br>
+   &nbsp;&nbsp;<input type="radio" name="R2" ONCLICK="A2='2'">&nbsp;ข.&nbsp;แป้นพิมพ์<br>
+   &nbsp;&nbsp;<input type="radio" name="R2" ONCLICK="A2='3'">&nbsp;ค.&nbsp;สแกนเนอร์<br>
+   &nbsp;&nbsp;<input type="radio" name="R2" ONCLICK="A2='4'">&nbsp;ง.&nbsp;จอภาพแบบสัมผัส</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;3.<br>
+   <FONT COLOR="#000000">&nbsp;ข้อใดเป็นอุปกรณ์รับข้อมูลทั้งหมด</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R3" ONCLICK="A3='1'">&nbsp;ก.&nbsp;แป้นพิมพ์ ลำโพง เมาส์<br>
+   &nbsp;&nbsp;<input type="radio" name="R3" ONCLICK="A3='2'">&nbsp;ข.&nbsp;สแกนเนอร์ ไมโครโฟน จอภาพ<br>
+   &nbsp;&nbsp;<input type="radio" name="R3" ONCLICK="A3='3'">&nbsp;ค.&nbsp;กล้องดิจิทัล ไมโครโฟน แป้นพิมพ์<br>
+   &nbsp;&nbsp;<input type="radio" name="R3" ONCLICK="A3='4'">&nbsp;ง.&nbsp;กล้องดิจิทัล&nbsp;สแกนเนอร์&nbsp;ไมโครโฟน</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;4.<br>
+   <FONT COLOR="#000000">&nbsp;ชิปไมโครโปรเซสเซอร์ที่นิยมใช้ในปัจจุบันคือข้อใด</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R4" ONCLICK="A4='1'">&nbsp;ก.&nbsp;AMD<br>
+   &nbsp;&nbsp;<input type="radio" name="R4" ONCLICK="A4='2'">&nbsp;ข.&nbsp;Celeron<br>
+   &nbsp;&nbsp;<input type="radio" name="R4" ONCLICK="A4='3'">&nbsp;ค.&nbsp;Pentium<br>
+   &nbsp;&nbsp;<input type="radio" name="R4" ONCLICK="A4='4'">&nbsp;ง.&nbsp;ถูกทุกข้อ</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;5.<br>
+   <FONT COLOR="#000000">&nbsp;วงจรอิเล็กทรอนิกส์ที่ใช้บันทึกข้อมูลจากโรงงานผลิตคือข้อใด</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R5" ONCLICK="A5='1'">&nbsp;ก.&nbsp;หน่วยรับข้อมูล<br>
+   &nbsp;&nbsp;<input type="radio" name="R5" ONCLICK="A5='2'">&nbsp;ข.&nbsp;อุปกรณ์แสดงผล<br>
+   &nbsp;&nbsp;<input type="radio" name="R5" ONCLICK="A5='3'">&nbsp;ค.&nbsp;หน่วยความจำหลัก<br>
+   &nbsp;&nbsp;<input type="radio" name="R5" ONCLICK="A5='4'">&nbsp;ง.&nbsp;หน่วยประมวลผลกลาง</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;6.<br>
+   <FONT COLOR="#000000">&nbsp;อุปกรณ์ในข้อใดเก็บข้อมูลเป็นแทร็ก&nbsp;(Track)</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R6" ONCLICK="A6='1'">&nbsp;ก.&nbsp;รอม<br>
+   &nbsp;&nbsp;<input type="radio" name="R6" ONCLICK="A6='2'">&nbsp;ข.&nbsp;แรม<br>
+   &nbsp;&nbsp;<input type="radio" name="R6" ONCLICK="A6='3'">&nbsp;ค.&nbsp;การ์ดจอ<br>
+   &nbsp;&nbsp;<input type="radio" name="R6" ONCLICK="A6='4'">&nbsp;ง.&nbsp;คอมแพคดิสก์</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;7.<br>
+   <FONT COLOR="#000000">&nbsp;จอภาพจัดเป็นฮาร์ดแวร์ที่ทำหน้าที่อย่างไร</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R7" ONCLICK="A7='1'">&nbsp;ก.&nbsp;อุปกรณ์ประมวลผลข้อมูล<br>
+   &nbsp;&nbsp;<input type="radio" name="R7" ONCLICK="A7='2'">&nbsp;ข.&nbsp;อุปกรณ์แสดงผลประเภทเสียง<br>
+   &nbsp;&nbsp;<input type="radio" name="R7" ONCLICK="A7='3'">&nbsp;ค.&nbsp;อุปกรณ์แสดงผลที่แป้นพิมพ์<br>
+   &nbsp;&nbsp;<input type="radio" name="R7" ONCLICK="A7='4'">&nbsp;ง.&nbsp;อุปกรณ์แสดงผลที่เป็นภาพเคลื่อนไหว</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;8.<br>
+   <FONT COLOR="#000000">&nbsp;หน่วยความจำในข้อใดบันทึกข้อมูลที่ลบหรือแก้ไขไม่ได้แต่อ่านได้</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R8" ONCLICK="A8='1'">&nbsp;ก.&nbsp;หน่วยความจำรอม<br>
+   &nbsp;&nbsp;<input type="radio" name="R8" ONCLICK="A8='2'">&nbsp;ข.&nbsp;หน่วยความจำแรม<br>
+   &nbsp;&nbsp;<input type="radio" name="R8" ONCLICK="A8='3'">&nbsp;ค.&nbsp;หน่วยความจำซีมอส<br>
+   &nbsp;&nbsp;<input type="radio" name="R8" ONCLICK="A8='4'">&nbsp;ง.&nbsp;หน่วยความจำชั่วคราว</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;9.<br>
+   <FONT COLOR="#000000">&nbsp;หน่วยความจุกิกกะไบต์มีความจุโดยประมาณเท่าไร</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R9" ONCLICK="A9='1'">&nbsp;ก.&nbsp;หนึ่งพันไบต์<br>
+   &nbsp;&nbsp;<input type="radio" name="R9" ONCLICK="A9='2'">&nbsp;ข.&nbsp;หนึ่งล้านไบต์<br>
+   &nbsp;&nbsp;<input type="radio" name="R9" ONCLICK="A9='3'">&nbsp;ค.&nbsp;หนึ่งพันล้านไบต์<br>
+   &nbsp;&nbsp;<input type="radio" name="R9" ONCLICK="A9='4'">&nbsp;ง.&nbsp;หนึ่งล้านล้านไบต์</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;10.<br>
+   <FONT COLOR="#000000">&nbsp;Random&nbsp;Access&nbsp;Memory&nbsp;เป็นอุปกรณ์ที่ทำหน้าที่ใด</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R10" ONCLICK="A10='1'">&nbsp;ก.&nbsp;ประมวลผลข้อมูล<br>
+   &nbsp;&nbsp;<input type="radio" name="R10" ONCLICK="A10='2'">&nbsp;ข.&nbsp;เก็บข้อมูลและโปรแกรม<br>
+   &nbsp;&nbsp;<input type="radio" name="R10" ONCLICK="A10='3'">&nbsp;ค.&nbsp;แสดงผลข้อมูลที่เป็นภาพ<br>
+   &nbsp;&nbsp;<input type="radio" name="R10" ONCLICK="A10='4'">&nbsp;ง.&nbsp;รับข้อมูลที่เป็นภาพเคลื่อนไหว</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;11.<br>
+   <FONT COLOR="#000000">&nbsp;หน่วยข้อมูลและตรรกะอยู่ส่วนใดของระบบคอมพิวเตอร์</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R1" ONCLICK="A1='1'">&nbsp;ก.&nbsp;หน่วยรับข้อมูล<br>
+   &nbsp;&nbsp;<input type="radio" name="R1" ONCLICK="A1='2'">&nbsp;ข.&nbsp;หน่วยความจำหลัก<br>
+   &nbsp;&nbsp;<input type="radio" name="R1" ONCLICK="A1='3'">&nbsp;ค.&nbsp;หน่วยความจำสำรอง<br>
+   &nbsp;&nbsp;<input type="radio" name="R1" ONCLICK="A1='4'">&nbsp;ง.&nbsp;หน่วยประมวลผลกลาง</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;12.<br>
+   <FONT COLOR="#000000">&nbsp;อุปกรณ์เก็บข้อมูลในข้อใดอ่านด้วยเครื่องอ่านแผ่นซีดี (CD-ROM Drive)</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R2" ONCLICK="A2='1'">&nbsp;ก.&nbsp;รอม<br>
+   &nbsp;&nbsp;<input type="radio" name="R2" ONCLICK="A2='2'">&nbsp;ข.&nbsp;ฮาร์ดดิสก์<br>
+   &nbsp;&nbsp;<input type="radio" name="R2" ONCLICK="A2='3'">&nbsp;ค.&nbsp;คอมแพคดิสก์<br>
+   &nbsp;&nbsp;<input type="radio" name="R2" ONCLICK="A2='4'">&nbsp;ง.&nbsp;แผ่นฟล็อปปีดิสก์</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;13.<br>
+   <FONT COLOR="#000000">&nbsp;ข้อใดเป็นเครื่องพิมพ์แบบไม่กระทบ</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R3" ONCLICK="A3='1'">&nbsp;ก.&nbsp;เครื่องพิมพ์เลเซอร์<br>
+   &nbsp;&nbsp;<input type="radio" name="R3" ONCLICK="A3='2'">&nbsp;ข.&nbsp;เครื่องพิมพ์ภาพดิจิทัล<br>
+   &nbsp;&nbsp;<input type="radio" name="R3" ONCLICK="A3='3'">&nbsp;ค.&nbsp;เครื่องพิมพ์แผ่นซีดีรอม<br>
+   &nbsp;&nbsp;<input type="radio" name="R3" ONCLICK="A3='4'">&nbsp;ง.&nbsp;เครื่องพิมพ์แบบจุด&nbsp;(Dot-Matrix)</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;14.<br>
+   <FONT COLOR="#000000">&nbsp;ข้อใดเป็นการแสดงผลจากฮาร์ดแวร์คอมพิวเตอร์</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R4" ONCLICK="A4='1'">&nbsp;ก.&nbsp;การพิมพ์รายงาน<br>
+   &nbsp;&nbsp;<input type="radio" name="R4" ONCLICK="A4='2'">&nbsp;ข.&nbsp;การดาวน์โหลดรูปภาพ<br>
+   &nbsp;&nbsp;<input type="radio" name="R4" ONCLICK="A4='3'">&nbsp;ค.&nbsp;เสียงเพลงจากคอมแพคดิสก์<br>
+   &nbsp;&nbsp;<input type="radio" name="R4" ONCLICK="A4='4'">&nbsp;ง.&nbsp;ถูกทุกข้อ</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;15.<br>
+   <FONT COLOR="#000000">&nbsp;ROM&nbsp;เป็นหน่วยความจำที่เก็บข้อมูลแบบใด</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R5" ONCLICK="A5='1'">&nbsp;ก.&nbsp;ข้อมูลจากการพิมพ์รายงาน<br>
+   &nbsp;&nbsp;<input type="radio" name="R5" ONCLICK="A5='2'">&nbsp;ข.&nbsp;บันทึกรูปภาพที่ถ่ายด้วยกล้องดิจิทัล<br>
+   &nbsp;&nbsp;<input type="radio" name="R5" ONCLICK="A5='3'">&nbsp;ค.&nbsp;บันทึกข้อมูลและคำสั่งเริ่มต้นของระบบ<br>
+   &nbsp;&nbsp;<input type="radio" name="R5" ONCLICK="A5='4'">&nbsp;ง.&nbsp;ถูกทุกข้อ</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;16.<br>
+   <FONT COLOR="#000000">&nbsp;เครื่องฉายแอลซีดีเป็นอุปกรณ์ฮาร์ดแวร์หรือไม่อย่างไร</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R6" ONCLICK="A6='1'">&nbsp;ก.&nbsp;เป็น  ใช้สำหรับนำเสนองาน<br>
+   &nbsp;&nbsp;<input type="radio" name="R6" ONCLICK="A6='2'">&nbsp;ข.&nbsp;ไม่เป็น  เพราะใช้เป็นอุปกรณ์เสริม<br>
+   &nbsp;&nbsp;<input type="radio" name="R6" ONCLICK="A6='3'">&nbsp;ค.&nbsp;ไม่เป็น  เพราะใช้สำหรับชมภาพยนตร์<br>
+   &nbsp;&nbsp;<input type="radio" name="R6" ONCLICK="A6='4'">&nbsp;ง.&nbsp;เป็น&nbsp;&nbsp;ใช้เป็นส่วนแสดงผลประเภทเสียง</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;17.<br>
+   <FONT COLOR="#000000">&nbsp;อุปกรณ์เก็บข้อมูลสำรองในข้อใดมีขนาดความจุน้อยและมากที่สุด</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R7" ONCLICK="A7='1'">&nbsp;ก.&nbsp;ฮาร์ดดิสก์และดีวีดี<br>
+   &nbsp;&nbsp;<input type="radio" name="R7" ONCLICK="A7='2'">&nbsp;ข.&nbsp;แผ่นฟล็อปปีดิสก์และดีวีดี<br>
+   &nbsp;&nbsp;<input type="radio" name="R7" ONCLICK="A7='3'">&nbsp;ค.&nbsp;ฮาร์ดดิสก์และคอมแพคดิสก์<br>
+   &nbsp;&nbsp;<input type="radio" name="R7" ONCLICK="A7='4'">&nbsp;ง.&nbsp;แผ่นฟล็อปปีดิสก์และคอมแพคดิสก์</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;18.<br>
+   <FONT COLOR="#000000">&nbsp;เมาส์เป็นอุปกรณ์ฮาร์ดแวร์ที่มีหน้าที่อย่างไร</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R8" ONCLICK="A8='1'">&nbsp;ก.&nbsp;ควบคุมการชี้ตำแหน่งบนจอภาพ<br>
+   &nbsp;&nbsp;<input type="radio" name="R8" ONCLICK="A8='2'">&nbsp;ข.&nbsp;รับข้อมูลเสียงเข้าสู่ระบบคอมพิวเตอร์<br>
+   &nbsp;&nbsp;<input type="radio" name="R8" ONCLICK="A8='3'">&nbsp;ค.&nbsp;ควบคุมการเคลื่อนที่ของเคอร์เซอร์บนจอภาพ<br>
+   &nbsp;&nbsp;<input type="radio" name="R8" ONCLICK="A8='4'">&nbsp;ง.&nbsp;ข้อ ก  และ ค  ถูก</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;19.<br>
+   <FONT COLOR="#000000">&nbsp;เครื่องพิมพ์แบบกระทบเหมาะจะใช้พิมพ์งานลักษณะใด</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R9" ONCLICK="A9='1'">&nbsp;ก.&nbsp;ใบส่งของ รูปภาพคน<br>
+   &nbsp;&nbsp;<input type="radio" name="R9" ONCLICK="A9='2'">&nbsp;ข.&nbsp;ตั๋วเครื่องบิน ใบเสร็จรับเงิน<br>
+   &nbsp;&nbsp;<input type="radio" name="R9" ONCLICK="A9='3'">&nbsp;ค.&nbsp;ภาพวาดลายเส้น รูปภาพสัตว์เลี้ยง<br>
+   &nbsp;&nbsp;<input type="radio" name="R9" ONCLICK="A9='4'">&nbsp;ง.&nbsp;รูปภาพสัตว์เลี้ยง ตั๋วเครื่องบิน ใบส่งของ</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+   <FONT SIZE="3" FACE="MS Sans Serif" COLOR="#0033CC"><B>ข้อ&nbsp;20.<br>
+   <FONT COLOR="#000000">&nbsp;ข้อใดเป็นฮาร์ดแวร์คอมพิวเตอร์ทั้งหมด</B><br>
+   &nbsp;&nbsp;<input type="radio" name="R10" ONCLICK="A10='1'">&nbsp;ก.&nbsp;โมเด็ม เครื่องพิมพ์ เมาส์<br>
+   &nbsp;&nbsp;<input type="radio" name="R10" ONCLICK="A10='2'">&nbsp;ข.&nbsp;สแกนเนอร์ เมาส์ โปรแกรม<br>
+   &nbsp;&nbsp;<input type="radio" name="R10" ONCLICK="A10='3'">&nbsp;ค.&nbsp;ชุดคำสั่ง แป้นพิมพ์ เครื่องพิมพ์<br>
+   &nbsp;&nbsp;<input type="radio" name="R10" ONCLICK="A10='4'">&nbsp;ง.&nbsp;โปรแกรม Paint จอภาพแอลซีดี เมาส์</FONT></FONT><br>
+
+<HR align="Left" WIDTH="95%">
+<p></p>
+	<p align="center">
+		<font face="MS Sans Serif"><input value="ตรวจคำตอบ" name="markbtn" onclick="MarkAnswers()" type="button"></font><br><br>
+		<font face="MS Sans Serif"><a href="../../index.html">[&nbsp;กลับหน้าเมนู&nbsp;]</a></font><br>
+	</p>
+	<p>&nbsp;</p>
+</form>
+</body>
+</html>
